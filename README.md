@@ -1,119 +1,40 @@
-# 📊 Bank Marketing Analysis
+# Retail Banking Customer Analytics Dashboard (Excel)
 
-## 📌 Project Overview
+Interactive Excel dashboard built on a 100,000-customer retail banking dataset (45 fields), covering customer profile, financial performance, and marketing campaign results.
 
-This project focuses on analyzing a **Bank Marketing dataset** to understand customer behavior and identify factors that influence the success of marketing campaigns.
+## Dashboard
 
-The project covers the complete data analysis workflow — from **raw data collection and data cleaning to analysis and insights generation**.
+![Dashboard top](screenshots/1_dashboard_top.png)
+![Customer segments](screenshots/2_dashboard_segments.png)
+![Dashboard charts](screenshots/3_dashboard_charts.png)
+![Dashboard bottom](screenshots/4_dashboard_bottom.png)
 
----
+## What I did
+- Added Age Group, Credit Score Category, and Balance Category columns using nested IF formulas
+- Built pivot tables and 14 charts, connected to slicers for Region, Age Group, Segment, Channel, Gender, Education, Risk Rating, and Contact Month
+- Tracked KPIs: 100,000 customers, 30.02% term-deposit conversion rate, average credit score of 620, total account balance of ₹194.84 Cr
 
-## 🎯 Project Objectives
+## Pivot analysis
 
-* Analyze customer demographics and behavior
-* Understand marketing campaign performance
-* Identify factors associated with successful customer responses
-* Clean and prepare the dataset for analysis
-* Generate meaningful business insights from the data
+![Pivot analysis 1](screenshots/5_pivot_analysis_1.png)
+![Pivot analysis 2](screenshots/6_pivot_analysis_2.png)
 
----
+## Key findings
+- 35-44 is the largest age group (32,170 customers)
+- Digital is the preferred channel for 50% of customers
+- 68% of customers have a Poor credit score
+- Metro has the highest average account balance (₹22,787); East has the lowest (₹17,570)
+- Term-deposit conversion is similar across regions (29% to 32%), with Metro the highest
 
-## 📂 Dataset
+## Data cleaning formulas
+- Age Group: `=IF(B2<25,"18-24",IF(B2<35,"25-34",IF(B2<45,"35-44",IF(B2<55,"45-54","55+"))))`
+- Credit Score Category: `=IF(M2>=750,"Excellent",IF(M2>=700,"Good",IF(M2>=650,"Fair","Poor")))`
+- Balance Category: `=IF(R2<10000,"Low",IF(R2<30000,"Medium","High"))`
 
-The project includes the following datasets:
+## Excel file
+[Open the Excel file (data, cleaning, pivot analysis, dashboard)](https://docs.google.com/spreadsheets/d/12Bff5jtHTWWLBgCnPi-6URPbGyqa3aUx/edit?usp=sharing)
 
-### 1. Raw Dataset
+The file is view-only. For the full dashboard with slicers and charts, please download it (File > Download > Microsoft Excel) and open it in Excel. Google Sheets does not display slicers and some charts.
 
-`bank_marketing_raw_dataset.csv`
-
-This is the original dataset before any data cleaning or transformation.
-
-### 2. Cleaned Dataset
-
-`bank_marketing_cleaned_dataset.csv`
-
-This dataset contains the cleaned and prepared data used for analysis.
-
-### 3. Analysis Dataset
-
-`bank_marketing_analysis.csv`
-
-This file contains the final dataset prepared for analysis and reporting.
-
----
-
-## 🧹 Data Cleaning
-
-The data preparation process included:
-
-* Identifying and handling missing values
-* Removing duplicate records where required
-* Checking data types
-* Standardizing inconsistent values
-* Cleaning categorical data
-* Preparing the dataset for analysis
-
----
-
-## 🔍 Analysis Performed
-
-The analysis focused on:
-
-* Customer demographics
-* Customer job and marital status
-* Education and housing information
-* Loan-related information
-* Contact methods
-* Campaign duration and number of contacts
-* Previous campaign outcomes
-* Customer response to marketing campaigns
-
----
-
-## 📈 Key Insights
-
-The analysis was used to identify:
-
-* Customer segments with higher campaign response rates
-* Characteristics associated with successful marketing campaigns
-* The impact of customer and campaign-related factors
-* Opportunities to improve future marketing campaigns
-
----
-
-## 🛠️ Tools & Technologies
-
-* **Microsoft Excel** – Data cleaning, analysis and reporting
-* **CSV** – Dataset storage and processing
-* **GitHub** – Project version control and portfolio
-
----
-
-## 📁 Project Structure
-
-```text
-Bank-Marketing-Analysis/
-│
-├── bank_marketing_raw_dataset.csv
-├── bank_marketing_cleaned_dataset.csv
-├── bank_marketing_analysis.csv
-└── README.md
-```
-
----
-
-## 💡 Business Value
-
-This analysis can help marketing teams understand customer segments and campaign patterns, enabling them to make more data-driven decisions and improve customer targeting.
-
----
-
-## 👩‍💻 Author
-
-**Neeti Tomar**
-
-Aspiring Data Analyst | Excel | SQL | Power BI
-
----
-
-⭐ If you find this project useful, feel free to explore the datasets and analysis.
+## Tools
+Advanced Excel, Pivot Tables, Slicers, Charts, Nested IF formulas
