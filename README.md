@@ -4,10 +4,10 @@ Interactive Excel dashboard built on a 100,000-customer retail banking dataset (
 
 ## Dashboard
 
-![Dashboard top](screenshots/1_dashboard_top.png)
-![Customer segments](screenshots/2_dashboard_segments.png)
-![Dashboard charts](screenshots/3_dashboard_charts.png)
-![Dashboard bottom](screenshots/4_dashboard_bottom.png)
+![Dashboard top](screenshots/dashboard_top.png)
+![Customer segments](screenshots/dashboard_segments.png)
+![Dashboard charts](screenshots/dashboard_charts.png)
+![Dashboard bottom](screenshots/dashboard_bottom.png)
 
 ## What I did
 - Added Age Group, Credit Score Category, and Balance Category columns using nested IF formulas
@@ -16,8 +16,8 @@ Interactive Excel dashboard built on a 100,000-customer retail banking dataset (
 
 ## Pivot analysis
 
-![Pivot analysis 1](screenshots/5_pivot_analysis_1.png)
-![Pivot analysis 2](screenshots/6_pivot_analysis_2.png)
+![Pivot analysis 1](screenshots/pivot_analysis_1.png)
+![Pivot analysis 2](screenshots/pivot_analysis_2.png)
 
 ## Key findings
 - 35-44 is the largest age group (32,170 customers)
